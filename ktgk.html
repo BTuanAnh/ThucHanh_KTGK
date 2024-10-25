@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Verification</title>
+    <link rel="stylesheet" href="ktgk.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <div class="header">
+            <a href="#" class="back-button">←</a>
+            <span>Account verification</span>
+            <span class="status in-progress">In progress</span>
+        </div>
+
+        <!-- Progress Bar -->
+        <div class="progress-bar">
+            <div class="step active">1</div>
+            <div class="step">2</div>
+            <div class="step">3</div>
+            <div class="step">4</div>
+        </div>
+
+        <!-- Form Section -->
+        <div class="form-section">
+            <h2>Business structure</h2>
+            <p>DigiRoad collects this information to better understand and serve your business.</p>
+            
+            <form id="verification-form">
+                <label for="email">Business Email</label>
+                <input type="email" id="email" placeholder="Email" required>
+
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" placeholder="Phone" required>
+
+                <label for="address">Address</label>
+                <input type="text" id="address-line" placeholder="Address line" required>
+
+                <div class="address-details">
+                    <input type="text" id="city" placeholder="City" required>
+                    <input type="text" id="zip" placeholder="Zip" required>
+                </div>
+
+                <button type="submit" class="btn-continue">Continue →</button>
+                <p id="success-message" style="display:none;color:green;">Thành công</p>
+            </form>
+        </div>
+    </div>
+    <script src="ktgk.js"></script>
+</body>
+</html>

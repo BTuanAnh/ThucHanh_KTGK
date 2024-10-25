@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f5fc;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.header .back-button {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+.header .status {
+    font-size: 14px;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.header .in-progress {
+    background-color: #d5f2d8;
+    color: #2f8547;
+}
+
+.progress-bar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.step {
+    width: 40px;
+    height: 40px;
+    background-color: #e0e0e0;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+}
+
+.step.active {
+    background-color: #5b57ed;
+}
+
+.form-section {
+    text-align: left;
+}
+
+.form-section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.form-section p {
+    font-size: 14px;
+    margin-bottom: 30px;
+    color: #6c6c6c;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #4a4a4a;
+}
+
+input {
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.address-details {
+    display: flex;
+    gap: 10px;
+}
+
+.address-details input {
+    flex: 1;
+}
+
+.btn-continue {
+    background-color: #5b57ed;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-continue:hover {
+    background-color: #4944d2;
+}
